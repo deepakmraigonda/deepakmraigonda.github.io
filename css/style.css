@@ -77,7 +77,7 @@ button, .button-links {
     border-radius: 50%;
     background-color: aqua;
     border: 1px solid black;
-    background-image: url("/images/Profilepic.jpg");
+    background-image: url("/images/profilepic.jpg");
     background-size: cover;
     box-shadow: 0px 15px 25px rgba(13, 26, 16, 0.5);
 }
