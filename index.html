@@ -94,7 +94,7 @@
             comprehensive course on <b>HTML</b> and developed small projects to solidify my understanding. I have also
             studied <b>CSS</b> at an intermediate level and applied it in various projects. I am well-versed in
             <b>Git</b> and
-            <b>GitHub</b>, understanding version control and collaboration workflows.Currently, I am learning Java from
+            <b>GitHub</b>, understanding version control and collaboration workflows. Currently, I am learning Java from
             the
             book Head <b>First Java</b>, which has been a great resource for grasping core concepts. Alongside, I am
             studying
@@ -116,10 +116,41 @@
             <a href="#link-to-my-instagram" id="link-to-socials" target="_blank">Instagram</a>
             <a href="#link-to-my-facebook" id="link-to-socials" target="_blank">Facebook</a>
             <a href="#link-to-my-X" id="link-to-socials" target="_blank">X</a>
-
-
         </div>
     </div>
+    <!-- Go to Top Button -->
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to top"></button>
+    <script>
+        // Show the button when scrolled down 100px
+        window.onscroll = function () {
+            const goToTopBtn = document.getElementById("goToTopBtn");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 100) {
+                goToTopBtn.style.display = "block";
+            } else {
+                goToTopBtn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to the top when clicked
+        function goToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+    <script>
+        window.addEventListener("scroll", () => {
+            const profilePic = document.getElementById("profile-pic");
+
+            // Check if the profile pic is 50px or less from the top
+            if (window.scrollY > 150) {
+                profilePic.classList.add("shrink");
+            } else {
+                profilePic.classList.remove("shrink");
+            }
+        });
+    </script>
 </body>
 
 </html>

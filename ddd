@@ -1,10 +1,9 @@
 /* Background for all */
 * {
-    background-color: #2E3440;
+    background-color: #AFD5AA;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:#B0BEC5;
 }
 
 /* Main layout container */
@@ -24,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1B1B1E;
+    background-color: #EAE2B7;
     padding: 20px 0;
 }
 
@@ -34,27 +33,23 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: #1B1B1E;
+    background-color: #EAE2B7;
 }
 
 /* Button and anchor styles */
 button, .button-links {
     height: 50px;
     width: 80px;
-    border: 1px solid #3B4252;
+    border: 1px solid black;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: #5E81AC;
-    color: #F7F9FB;
+    background-color: #003049;
+    color: white;
     cursor: pointer;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-}
-button:hover{
-    background-color :hsl(209, 81%, 78%)
 }
  /* Flex container to align hero section and profile pic */
 .hero-profile-container {
@@ -66,36 +61,25 @@ button:hover{
      p{
         font-size:25px;
         padding-top:15px;
+        color:rgb(6, 39, 28);
         text-align:justify;
     } 
     
 }
 
 #hero-section {
-    flex: 1;  /* Makes it take available space */
+    flex: 2;  /* Makes it take available space */
 }
 
 #profile-pic {
     height: 250px;        /* Adjusted size */
     width: 250px;
     border-radius: 50%;
-    background-color: hsl(210, 19%, 52%);
-    border: 3px solid #9ba9ad;
+    background-color: aqua;
+    border: 1px solid black;
     background-image: url("/images/profilepic.jpg");
     background-size: cover;
     box-shadow: 0px 15px 25px rgba(13, 26, 16, 0.5);
-    position: relative; /* Allows smooth transition */
-    transition: all 0.5s ease;
-}
-#profile-pic.shrink {
-    height: 60px;          /* Shrinks the size */
-    width: 60px;
-    border-radius: 50%;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
-    z-index: 1000;
 }
  
 
@@ -104,14 +88,14 @@ button:hover{
     gap:20px;
     display:flex;
     justify-content: start;
-    color:#ECEFF4;    
+    color:blue;    
     #link-to-socials {
      text-decoration: none;
     }
     a{
         font-size:25px;
         padding-top:15px;
-        color:#7298c9;
+        color:blue;
         text-align:justify;
     } 
     
@@ -147,29 +131,11 @@ button:hover{
 }
 #contact-section{
     padding:150px;
-    padding-bottom: 30px;
-    padding-top:30px;
     font-size:30px;
-    background-color:#2a4455;
-    text-align: center;
     p{
         font-size:25px;
         padding-top:15px;
-        text-align:center;
-        background-color:#2a4455;
-
-    }
-    h1{
-        background-color:#2a4455;
-    }
-    .social-links{
-        padding-top:20px;
-        justify-content: center;
-        background-color:#2a4455;
-    }
-    a{
-        background-color:#2a4455;
-
+        text-align:justify;
     }
 }
 /* scroll bar */
@@ -178,13 +144,14 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
+    background: #e0e0e0;
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #003049, #456376);
+    background: linear-gradient(180deg, #003049, #669bbc);
     border-radius: 10px;
-    border: 2px solid #656060;
+    border: 2px solid #e0e0e0;
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -196,27 +163,5 @@ li{
 html{
     scroll-behavior: smooth;
 }
-/* Go to Top Button Styles */
-#goToTopBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 55px;
-    height: 55px;
-    background-color: #4C566A; /* Dark Gray */
-    background-image: url("/images/up.png");
-    background-size: cover;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none; /* Hidden by default */
-    z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
 
-/* Hover Effect */
-#goToTopBtn:hover {
-    background-color: #88C0D0; /* Arctic Blue */
-}
+⬆
