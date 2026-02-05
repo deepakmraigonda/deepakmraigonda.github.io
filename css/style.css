@@ -142,22 +142,44 @@ body {
 .social-links {
     margin-top: 32px;
     display: flex;
-    gap: 22px;
+    gap: 30px;
 }
 
 .social-links div {
     height: 48px;
     width: 48px;
     border-radius: 14px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    box-shadow: 0 0 15px rgba(248, 247, 247, 0.6);
     transition: all 0.35s ease;
+    background-color: white;
 }
 
 .social-links div:hover {
-    transform: translateY(-6px) rotate(3deg);
-    box-shadow: 0 0 25px var(--neon-pink);
+    transform: translateY(-6px) rotate(-10deg);
+    box-shadow: 0 0 25px var(white);
+}
+#linkedinicon,
+#githubicon,
+#resumeicon {
+    height: 48px;
+    width: 48px;
+    border-radius: 14px;
+    background-size: cover;
+    background-position: center;
 }
 
+/* Actual icons */
+#linkedinicon {
+    background-image: url("/images/linkedin-logo.png");
+}
+
+#githubicon {
+    background-image: url("/images/github-logo.png");
+}
+
+#resumeicon {
+    background-image: url("/images/cv.png");
+}
 
 #contact-section {
     text-align: center;
